@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //simple date
+    const y = new Date();
+    const d = new Date();
+    const m = new Date();
+    var mouth=m.getMonth() + 1;
+    mouth=mouth.toString();
+    var day=d.getDate();
+    day=day.toString();
+    if (mouth<10){
+        mouth=0+mouth
+    }
+    var year=y.getFullYear();
+    year=year.toString();
+    /*birdthy num
+    var counter;
+    counter=year-2021
+    */
+    var fulldate=day+"/"+mouth+"/"+year;
+    console.log(fulldate)
+    if (mouth=="04"&&day=="24"){
+        let url = "birthday.html";
+        window.location.href = url;
+    }
+
+</script>
+</body>
+</html>
